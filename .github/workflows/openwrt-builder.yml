@@ -87,6 +87,7 @@ jobs:
 
     - name: Compile the firmware
       id: compile
+      continue-on-error: true
       run: |
         cd owrt2512
         hnscripts/updateNmake.sh

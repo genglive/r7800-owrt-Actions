@@ -58,13 +58,13 @@ jobs:
     - name: Clone source code
       working-directory: /workdir
       run: |
-        continue-on-error: true
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
     - name: del source code
       run: |
+        continue-on-error: true
         rm -f openwrt
         chmod +x R7800-owrt2512-r32680-17d625c858-20260221-1251-newBuildroot.sh
         ./R7800-owrt2512-r32680-17d625c858-20260221-1251-newBuildroot.sh

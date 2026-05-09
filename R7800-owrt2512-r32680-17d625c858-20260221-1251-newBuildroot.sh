@@ -43,6 +43,8 @@ cd $TARGET
 ### create symlink to dl (after git clone)
 ln -s ../dl dl
 
+./scripts/feeds update -a
+
 ### patch OpenWrt source first to set feeds correctly
 ### update the feeds, apply patches to feeds
 ### re-create index to find new packages, finally install

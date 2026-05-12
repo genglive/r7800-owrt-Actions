@@ -51,7 +51,7 @@ ln -s ../dl dl
 patch -p1 -i ../$FILESTAMP-openwrt.patch
 (cd feeds/luci;     patch -p1 -i ../../../$FILESTAMP-luci.patch)
 (cd feeds/packages; patch -p1 -i ../../../$FILESTAMP-packages.patch)
-(cd feeds/routing;  patch -p1 -i ../../../$FILESTAMP-routing.patch)
+#(cd feeds/routing;  patch -p1 -i ../../../$FILESTAMP-routing.patch)
 
 
 ### chmod known script files executable

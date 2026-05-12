@@ -74,7 +74,6 @@ jobs:
         rm -f openwrt
         chmod +x R7800-owrt2512-r32680-17d625c858-20260221-1251-newBuildroot.sh
         ./R7800-owrt2512-r32680-17d625c858-20260221-1251-newBuildroot.sh
-        mv feeds.conf.default owrt2512/feeds.conf.default
         cd owrt2512
         ./scripts/feeds update -a
         ./scripts/feeds install -a -p kiddin9 -f

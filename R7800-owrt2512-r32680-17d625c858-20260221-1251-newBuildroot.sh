@@ -42,7 +42,12 @@ cd $TARGET
 
 ### create symlink to dl (after git clone)
 ln -s ../dl dl
+
+cd $TARGET
+cd ..
 mv feeds.conf.default owrt2512/feeds.conf.default
+
+cd $TARGET
 ./scripts/feeds update -a
 
 ### patch OpenWrt source first to set feeds correctly
